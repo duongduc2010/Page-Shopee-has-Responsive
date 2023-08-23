@@ -1,0 +1,201 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.modal.open{
+    display: flex;
+}
+.modal__overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.2);
+    width: 100%;
+    height: 100%;
+    animation: fadeIn linear 0.4s;
+}
+.form{
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    width: 500px;
+    animation: fadeIn linear 0.1s;
+    display: none;
+}
+
+.form.form-login{
+    display: block;
+}
+.form.form-register{
+    display: block;
+}
+.form__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 28px;
+
+}
+
+.form__header-heading-login{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.form__header-heading-register{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f53e2d;
+    cursor: pointer;
+}
+
+.form__body{
+    margin-top: 30px;
+    padding: 10px 28px;
+}
+
+.form__body-input{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    color: #000;
+}
+
+.form__body-username{
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+}
+
+.form__body-password{
+    padding: 8px 12px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+}
+
+.form__body-more{
+    text-align: right;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+.form__body-more-password{
+    text-decoration: none;
+    color: #f53e2d;
+    position: relative;
+}
+.form__body-more-password::after{
+    content: "";
+    position: absolute;
+    border-right: 1px solid #dbdbdb;
+    height: 13px;
+    top: 3px;
+    right: -5px;
+}
+.form__body-more-help{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #999;
+
+}
+.form__body-more-des{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.color-red{
+    color: #f53e2d;
+    text-decoration: none;
+}
+.form__body-btn{
+    text-align: right;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.form__body-btn-back{
+    border: none;
+    background-color: #fff;
+    padding: 6px 16px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.form__body-btn-back:hover{
+    background-color: #f53e2d;
+    border: 1px solid #ce3a21;
+    color: #fff;
+
+}
+.form__body-btn-login{
+    margin-left: 4px;
+    background-color: #f53e2d;
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    border: 1px solid #ce3a21;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.form__footer{
+    background-color: #eaeaea;
+    padding: 10px 28px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.form__footer-apps{
+    display: flex;
+    justify-content: space-between;
+}
+.form__footer-app{
+    padding: 8px 16px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.form__footer-app-sms{
+    background-color: #41bd63;
+    flex: 1;
+}
+
+
+.form__footer-app-facebook{
+    background-color: #4269bb;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.form__footer-app-google{
+    background-color: #fff;
+    color: #000;
+    flex: 1;
+
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

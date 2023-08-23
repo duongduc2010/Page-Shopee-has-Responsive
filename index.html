@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://kit.fontawesome.com/e618208e8b.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/style/main.css">
+	<link rel="stylesheet" type="text/css" href="./assets/style/grid.css">
+	<link rel="stylesheet" type="text/css" href="./assets/style/base.css">
+	<link rel="stylesheet" type="text/css" href="./assets/style/responsive.css">
+</head>
+<body>
+	<div class="app">
+		<header class="header">
+			<div class="grid wide">
+				<div class="header__navbar">
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item">
+							<span class="header__navbar-title">Vào cửa hàng trên ứng dụng Shop</span>
+							<div class="header__navbar-apps-qr">
+								<img src="./assets/img/qrcode.png" alt="" class="header__navbar-qr-img">
+								<ul class="header__navbar-apps">
+									<li class="header__navbar-app">
+										<a href="">
+											<img src="./assets/img/googleplay.png" alt="" class="header__navbar-app-img">
+										</a>
+									</li>
+									<li class="header__navbar-app">
+										<a href="">
+											<img src="./assets/img//appstore.png" alt="" class="header__navbar-app-img">
+										</a>
+									</li>
+								</ul>
+								
+							</div>
+						</li>
+						<li class="header__navbar-item">
+							Kết nối
+							<a href="" class="header__navbar-icon-link">
+								<i class="header__navbar-icon fa-brands fa-facebook"></i>
+							</a>
+							<a href="" class="header__navbar-icon-link">
+								<i class="header__navbar-icon fa-brands fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item">
+							<i class="header__navbar-icon fa-regular fa-bell"></i>
+							<a href="" class="header__navbar-item-link">
+								<span class="header__navbar-title">Thông báo</span>
+								<div class="header-notify">
+									<h4 class="header-notify__title">Thông báo mới nhận</h4>
+									<ul class="header-notifty__list">
+										<li class="header-notify__item">
+											<div class="header-nofify__item-product">
+												<img src="./assets/img/nuochoa.jpg" alt="" class="header-notify__item-product-img">
+												<div class="header-nofify__item-product-detail">
+													<h4 class="header-nofify__item-product-detail-name">Mỹ phẩm Ohui chính hãng</h4>
+													<span class="header-nofify__item-product-detail-des">Mô tả của mỹ phẫm Ohui chính hãng</span>
+												</div>
+											</div>
+										</li>
+										<li class="header-notify__item header-notify__item-viewd">
+											<div class="header-nofify__item-product">
+												<img src="./assets/img/nuochoa.jpg" alt="" class="header-notify__item-product-img">
+												<div class="header-nofify__item-product-detail">
+													<h4 class="header-nofify__item-product-detail-name">Mỹ phẩm Ohui chính hãng Mỹ phẩm Ohui chính hãng Mỹ phẩm Ohui chính hãng</h4>
+													<span class="header-nofify__item-product-detail-des">Mô tả của mỹ phẫm Ohui chính hãng Mô tả của mỹ phẫm Ohui chính hãng Mô tả của mỹ phẫm Ohui chính hãng</span>
+												</div>
+											</div>
+										</li>
+										<li class="header-notify__item">
+											<div class="header-nofify__item-product">
+												<img src="./assets/img/nuochoa.jpg" alt="" class="header-notify__item-product-img">
+												<div class="header-nofify__item-product-detail">
+													<h4 class="header-nofify__item-product-detail-name">Mỹ phẩm Ohui chính hãng</h4>
+													<span class="header-nofify__item-product-detail-des">Mô tả của mỹ phẫm Ohui chính hãng</span>
+												</div>
+											</div>
+										</li>
+										
+									</ul>
+									<footer class="header-notify__footer">
+										<a class="header-notify__footer-btn" href="">Xem tất cả</a>
+									</footer>
+								</div>
+							</a>
+						</li>
+						<li class="header__navbar-item">
+							<i class="header__navbar-icon fa-solid fa-question"></i>
+							<a href="" class="header__navbar-item-link">
+								<span class="header__navbar-title">Trợ giúp</span>
+							</a>
+							
+						</li>
+						<!-- Not login -->
+						<li class="header__navbar-item">
+							<div class="header__navbar-item-link js-modal-register">
+								<span class="header__navbar-title">Đăng ký</span>
+							</div>
+							
+						</li>
+						
+						<li class="header__navbar-item">
+							<div class="header__navbar-item-link js-modal-login">
+								<span class="header__navbar-title">Đăng nhập</span>
+							</div>
+							
+						</li>
+						<!-- After login -->
+						<!-- <li class="header__navbar-item">
+							<img src="./assets/img/user.png" alt="" class="header__navbar-user-img">
+							<span class="header__navbar-user-name">Tùng Đức</span>
+							<div class="header__navbar-user-menu">
+								<ul class="header__navbar-user-list">
+									<li class="header__navbar-user-item">
+										<a class="header__navbar-user-item-link" href="">Tài khoản của tôi</a>
+									</li>
+									<li class="header__navbar-user-item">
+										<a class="header__navbar-user-item-link" href="">Địa chỉ của tôi</a>
+									</li>
+									<li class="header__navbar-user-item">
+										<a class="header__navbar-user-item-link" href="">Đăng nhập</a>
+									</li>
+									<li class="header__navbar-user-item">
+										<a class="header__navbar-user-item-link" href="">Đăng xuất</a>
+									</li>
+								</ul>
+							</div>
+						</li> -->
+					</ul>
+				</div>
+				<div class="header-with-search">
+					<label for="mobile-menu-btn"  class="mobile__menu">
+						<i class="mobile__menu-icon fa-solid fa-bars"></i>
+					</label>
+					<label for="mobile-search-btn"  class="mobile__search">
+						<i  class="mobile__search-icon fa-solid fa-magnifying-glass"></i>
+					</label>
+					<input hidden id="mobile-search-btn" type="checkbox" class="mobile__search-checkbox">
+					<input hidden id="mobile-menu-btn" type="checkbox" class="mobile__menu-checkbox">
+					
+					<div class="header__mobile-menu">
+						<ul class="header__mobile-list">
+							<li class="header__mobile-item"><a href="">Đăng nhập</a></li>
+							<li class="header__mobile-item"><a href="">Đăng xuất</a></li>
+						</ul>
+					</div>
+					
+					<div class="header__logo">
+						<a class="header__logo-link" href="">
+							<img src="./assets/img/Shopee-logo2.jpg" alt="" class="header__logo-img">
+						</a>
+					</div>
+					
+					<div class="header__search">
+						<div class="header__search-input-wrap">
+							<input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+							<div class="header__search-history">
+								<h4 class="header__search-history-title">Lịch sử tìm kiếm</h4>
+								<ul class="header__search-history-list">
+									<li class="header__search-history-item"><a class="header__search-history-link" href="">Kem chống nắng</a></li>
+									<li class="header__search-history-item"><a class="header__search-history-link" href="">Sữa rửa mặt</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__search-select">
+							<span class="header__search-select-label">Trong shop</span>
+							<i class="header__search-select-icon fa-solid fa-chevron-down"></i>
+							<div class="header__search-select-choose">
+								<ul class="header__search-select-list">
+									<li class="header__search-select-item">
+										Trong shop
+										<i class="header__search-select-icon fa-solid fa-check"></i>
+									</li>
+									<li class="header__search-select-item margin-top">Ngoài shop</li>
+								</ul>
+							</div>
+						</div>
+						<button class="header__search-btn">
+							<i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+						</button>
+					</div>
+					<div class="header__cart">
+						<i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+						<div class="header__cart-product">
+							<h4 class="header__cart-title">Sản phẩm đã thêm</h4>
+							<ul class="header__cart-list">
+								<li class="header__cart-item">
+									<img src="./assets/img/nuochoa.jpg" alt="" class="header__cart-item-img">
+									<div class="header__cart-product-info">
+										<div class="header__cart-item-detail">
+											<h4 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h4>
+											<span class="header__cart-item-price">2.000.000đ</span>
+											<span class="header__cart-multiply">x</span>
+											<span class="header__cart-item-quantity">2</span>
+										</div>
+										<div class="header__cart-item-category">
+											<span class="header__cart-item-category-name">Phân loại: Bạc</span>
+											<button class="header__cart-item-btn-delete">Xóa</button>
+										</div>
+									</div>
+								</li>
+								<li class="header__cart-item">
+									<img src="./assets/img/nuochoa.jpg" alt="" class="header__cart-item-img">
+									<div class="header__cart-product-info">
+										<div class="header__cart-item-detail">
+											<h4 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h4>
+											<span class="header__cart-item-price">2.000.000đ</span>
+											<span class="header__cart-multiply">x</span>
+											<span class="header__cart-item-quantity">2</span>
+										</div>
+										<div class="header__cart-item-category">
+											<span class="header__cart-item-category-name">Phân loại: Bạc</span>
+											<button class="header__cart-item-btn-delete">Xóa</button>
+										</div>
+									</div>
+								</li>
+								<li class="header__cart-item">
+									<img src="./assets/img/nuochoa.jpg" alt="" class="header__cart-item-img">
+									<div class="header__cart-product-info">
+										<div class="header__cart-item-detail">
+											<h4 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h4>
+											<span class="header__cart-item-price">2.000.000đ</span>
+											<span class="header__cart-multiply">x</span>
+											<span class="header__cart-item-quantity">2</span>
+										</div>
+										<div class="header__cart-item-category">
+											<span class="header__cart-item-category-name">Phân loại: Bạc</span>
+											<button class="header__cart-item-btn-delete">Xóa</button>
+										</div>
+									</div>
+								</li>
+								<li class="header__cart-item">
+									<img src="./assets/img/nuochoa.jpg" alt="" class="header__cart-item-img">
+									<div class="header__cart-product-info">
+										<div class="header__cart-item-detail">
+											<h4 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h4>
+											<span class="header__cart-item-price">2.000.000đ</span>
+											<span class="header__cart-multiply">x</span>
+											<span class="header__cart-item-quantity">2</span>
+										</div>
+										<div class="header__cart-item-category">
+											<span class="header__cart-item-category-name">Phân loại: Bạc</span>
+											<button class="header__cart-item-btn-delete">Xóa</button>
+										</div>
+									</div>
+								</li>
+								<li class="header__cart-item">
+									<img src="./assets/img/nuochoa.jpg" alt="" class="header__cart-item-img">
+									<div class="header__cart-product-info">
+										<div class="header__cart-item-detail">
+											<h4 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h4>
+											<span class="header__cart-item-price">2.000.000đ</span>
+											<span class="header__cart-multiply">x</span>
+											<span class="header__cart-item-quantity">2</span>
+										</div>
+										<div class="header__cart-item-category">
+											<span class="header__cart-item-category-name">Phân loại: Bạc</span>
+											<button class="header__cart-item-btn-delete">Xóa</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<button class="header__cart-btn">Xem giỏ hàng</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__sort">
+				<ul class="header__sort-list">
+					<li class="header__sort-item"><a href="" class="header__sort-link">Liên quan</a></li>
+					<li class="header__sort-item header__sort-item--active"><a href="" class="header__sort-link">Mới nhất</a></li>
+					<li class="header__sort-item"><a href="" class="header__sort-link">Bán chạy</a></li>
+					<li class="header__sort-item"><a href="" class="header__sort-link">Giá</a></li>
+				</ul>
+			</div>
+		</header>
+		<div  class="app__container">
+
+			<div class="grid wide">
+				<div class="mobile-category">
+					<ul class="mobile-category__list">
+						<li class="mobile-category__item"><a href="">Dụng cụ và thiết bị tiện ích</a></li>
+						<li class="mobile-category__item"><a href="">Dụng cụ và thiết bị tiện ích</a></li>
+						<li class="mobile-category__item"><a href="">Dụng cụ và thiết bị tiện ích</a></li>
+						<li class="mobile-category__item"><a href="">Dụng cụ và thiết bị tiện ích</a></li>
+						<li class="mobile-category__item"><a href="">Dụng cụ và thiết bị tiện ích</a></li>
+						<li class="mobile-category__item"><a href="">Dụng cụ và thiết bị tiện ích</a></li>
+						<li class="mobile-category__item"><a href="">Dụng cụ và thiết bị tiện ích</a></li>
+						<li class="mobile-category__item"><a href="">Dụng cụ và thiết bị tiện ích</a></li>
+						<li class="mobile-category__item"><a href="">Dụng cụ và thiết bị tiện ích</a></li>
+						<li class="mobile-category__item"><a href="">Dụng cụ và thiết bị tiện ích</a></li>
+						<li class="mobile-category__item"><a href="">Dụng cụ và thiết bị tiện ích</a></li>
+						
+						
+						
+					</ul>
+				</div>
+				<div class="row sm-gutter app__content">
+					<div  class="col l-2">
+						<div class="category">
+							<h4 class="category__heading">Danh mục</h4>
+							<ul class="category__list">
+								<li class="category__item category__item--active"><a class="category__item-link" href="">Trang điểm mặt</a></li>
+								<li class="category__item"><a class="category__item-link" href="">Trang điểm môi</a></li>
+								<li class="category__item"><a class="category__item-link" href="">Trang điểm mắt</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col l-10 m-12 c-12">
+						<div class="home__filter">
+							<span class="home__filter-label">Sắp xếp theo</span>
+							<button class="home__filter-btn home__filter-btn--active">Phổ biến</button>
+							<button class="home__filter-btn">Mới nhất</button>
+							<button class="home__filter-btn">Bán chạy</button>
+							<div class="home__filter-price">
+								<span class="home__filter-price-label">Giá</span>
+								<i class="home__filter-icon fa-solid fa-chevron-down"></i>
+								<ul class="home__filter-price-list">
+									<li class="home__filter-price-item">
+										Giá: Thấp đến cao
+									</li>
+									<li class="home__filter-price-item">
+										Giá: Cao đến thấp
+									</li>
+								</ul>
+							</div>
+							<div class="home__filter-pagination">
+								<span class="home__filter-pagination-page"><span class="home__filter-pagination-page-currently">1</span>/14</span>
+								<div class="home__filter-pagination-page-btn">
+									<button class="home__filter-btn-page home__filter-btn-page--inactive"><i class="home__filter-icon fa-solid fa-chevron-left"></i></button>
+									<button class="home__filter-btn-page"><i class="home__filter-icon fa-solid fa-chevron-right"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="home__product">
+							<div class="row sm-gutter">
+								<div class="col l-2-4 m-4 c-6 footer__position">
+									<div class="product-item">
+										<img src="./assets/img/nuochoa.jpg" alt="" class="product__img">
+										<span class="product__name">Nước hoa ô tô cao cấp Grasse</span>
+										<div class="product__price">
+											<span class="product__price-old">1.200.000đ</span>
+											<span class="product__price-current">900.000đ</span>
+										</div>
+										<div class="product__rate">
+											<i class="product__rate-like product__rate-like--liked fa-solid fa-heart"></i>
+											<div class="product__rate-quantity">
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<span class="product__rate-number-quantity">88 đã bán</span>
+											</div>
+										</div>
+										<div class="product__origin">
+											<div class="product__origin-branch">Ohui</div>
+											<div class="product__origin-country">Nhật Bản</div>
+										</div>
+										<div class="product__sale-off">
+											<span class="product__sale-off-percent">43%</span>
+											<span class="product__sale-off-label">GIẢM</span>
+										</div>
+										<div class="product__like">
+											<i class="product__like-icon fa-solid fa-check"></i>
+											<span class="product__like-label">Yêu thích</span>
+										</div>
+									</div>
+								</div>
+								<div class="col l-2-4 m-4 c-6 footer__position">
+									<div class="product-item">
+										<img src="https://shopgiayreplica.com/wp-content/uploads/2022/06/giay-new-balance-57-40-grey-day-6.jpg" alt="" class="product__img">
+										<span class="product__name">Nước hoa ô tô cao cấp Grasse</span>
+										<div class="product__price">
+											<span class="product__price-old">1.200.000đ</span>
+											<span class="product__price-current">900.000đ</span>
+										</div>
+										<div class="product__rate">
+											<i class="product__rate-like fa-solid fa-heart"></i>
+											<div class="product__rate-quantity">
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<span class="product__rate-number-quantity">88 đã bán</span>
+											</div>
+										</div>
+										<div class="product__origin">
+											<div class="product__origin-branch">Ohui</div>
+											<div class="product__origin-country">Nhật Bản</div>
+										</div>
+										<div class="product__sale-off">
+											<span class="product__sale-off-percent">43%</span>
+											<span class="product__sale-off-label">GIẢM</span>
+										</div>
+										<div class="product__like">
+											<i class="product__like-icon fa-solid fa-check"></i>
+											<span class="product__like-label">Yêu thích</span>
+										</div>
+									</div>
+									
+								</div>
+								<div class="col l-2-4 m-4 c-6 footer__position">
+									<div class="product-item">
+										<img src="./assets/img/nuochoa.jpg" alt="" class="product__img">
+										<span class="product__name">Nước hoa ô tô cao cấp Grasse</span>
+										<div class="product__price">
+											<span class="product__price-old">1.200.000đ</span>
+											<span class="product__price-current">900.000đ</span>
+										</div>
+										<div class="product__rate">
+											<i class="product__rate-like product__rate-like--liked fa-solid fa-heart"></i>
+											<div class="product__rate-quantity">
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<span class="product__rate-number-quantity">88 đã bán</span>
+											</div>
+										</div>
+										<div class="product__origin">
+											<div class="product__origin-branch">Ohui</div>
+											<div class="product__origin-country">Nhật Bản</div>
+										</div>
+										<div class="product__sale-off">
+											<span class="product__sale-off-percent">43%</span>
+											<span class="product__sale-off-label">GIẢM</span>
+										</div>
+										<div class="product__like">
+											<i class="product__like-icon fa-solid fa-check"></i>
+											<span class="product__like-label">Yêu thích</span>
+										</div>
+									</div>
+								</div>
+								<div class="col l-2-4 m-4 c-6 footer__position">
+									<div class="product-item">
+										<img src="https://shopgiayreplica.com/wp-content/uploads/2022/06/giay-new-balance-57-40-grey-day-6.jpg" alt="" class="product__img">
+										<span class="product__name">Nước hoa ô tô cao cấp Grasse</span>
+										<div class="product__price">
+											<span class="product__price-old">1.200.000đ</span>
+											<span class="product__price-current">900.000đ</span>
+										</div>
+										<div class="product__rate">
+											<i class="product__rate-like fa-solid fa-heart"></i>
+											<div class="product__rate-quantity">
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<span class="product__rate-number-quantity">88 đã bán</span>
+											</div>
+										</div>
+										<div class="product__origin">
+											<div class="product__origin-branch">Ohui</div>
+											<div class="product__origin-country">Nhật Bản</div>
+										</div>
+										<div class="product__sale-off">
+											<span class="product__sale-off-percent">43%</span>
+											<span class="product__sale-off-label">GIẢM</span>
+										</div>
+										<div class="product__like">
+											<i class="product__like-icon fa-solid fa-check"></i>
+											<span class="product__like-label">Yêu thích</span>
+										</div>
+									</div>
+									
+								</div>
+								<div class="col l-2-4 m-4 c-6 footer__position">
+									<div class="product-item">
+										<img src="./assets/img/nuochoa.jpg" alt="" class="product__img">
+										<span class="product__name">Nước hoa ô tô cao cấp Grasse</span>
+										<div class="product__price">
+											<span class="product__price-old">1.200.000đ</span>
+											<span class="product__price-current">900.000đ</span>
+										</div>
+										<div class="product__rate">
+											<i class="product__rate-like product__rate-like--liked fa-solid fa-heart"></i>
+											<div class="product__rate-quantity">
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<span class="product__rate-number-quantity">88 đã bán</span>
+											</div>
+										</div>
+										<div class="product__origin">
+											<div class="product__origin-branch">Ohui</div>
+											<div class="product__origin-country">Nhật Bản</div>
+										</div>
+										<div class="product__sale-off">
+											<span class="product__sale-off-percent">43%</span>
+											<span class="product__sale-off-label">GIẢM</span>
+										</div>
+										<div class="product__like">
+											<i class="product__like-icon fa-solid fa-check"></i>
+											<span class="product__like-label">Yêu thích</span>
+										</div>
+									</div>
+								</div>
+								<div class="col l-2-4 m-4 c-6 footer__position">
+									<div class="product-item">
+										<img src="https://shopgiayreplica.com/wp-content/uploads/2022/06/giay-new-balance-57-40-grey-day-6.jpg" alt="" class="product__img">
+										<span class="product__name">Nước hoa ô tô cao cấp Grasse</span>
+										<div class="product__price">
+											<span class="product__price-old">1.200.000đ</span>
+											<span class="product__price-current">900.000đ</span>
+										</div>
+										<div class="product__rate">
+											<i class="product__rate-like fa-solid fa-heart"></i>
+											<div class="product__rate-quantity">
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<span class="product__rate-number-quantity">88 đã bán</span>
+											</div>
+										</div>
+										<div class="product__origin">
+											<div class="product__origin-branch">Ohui</div>
+											<div class="product__origin-country">Nhật Bản</div>
+										</div>
+										<div class="product__sale-off">
+											<span class="product__sale-off-percent">43%</span>
+											<span class="product__sale-off-label">GIẢM</span>
+										</div>
+										<div class="product__like">
+											<i class="product__like-icon fa-solid fa-check"></i>
+											<span class="product__like-label">Yêu thích</span>
+										</div>
+									</div>
+									
+								</div>
+								<div class="col l-2-4 m-4 c-6 footer__position">
+									<div class="product-item">
+										<img src="./assets/img/nuochoa.jpg" alt="" class="product__img">
+										<span class="product__name">Nước hoa ô tô cao cấp Grasse</span>
+										<div class="product__price">
+											<span class="product__price-old">1.200.000đ</span>
+											<span class="product__price-current">900.000đ</span>
+										</div>
+										<div class="product__rate">
+											<i class="product__rate-like product__rate-like--liked fa-solid fa-heart"></i>
+											<div class="product__rate-quantity">
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<span class="product__rate-number-quantity">88 đã bán</span>
+											</div>
+										</div>
+										<div class="product__origin">
+											<div class="product__origin-branch">Ohui</div>
+											<div class="product__origin-country">Nhật Bản</div>
+										</div>
+										<div class="product__sale-off">
+											<span class="product__sale-off-percent">43%</span>
+											<span class="product__sale-off-label">GIẢM</span>
+										</div>
+										<div class="product__like">
+											<i class="product__like-icon fa-solid fa-check"></i>
+											<span class="product__like-label">Yêu thích</span>
+										</div>
+									</div>
+								</div>
+								<div class="col l-2-4 m-4 c-6 footer__position">
+									<div class="product-item">
+										<img src="https://shopgiayreplica.com/wp-content/uploads/2022/06/giay-new-balance-57-40-grey-day-6.jpg" alt="" class="product__img">
+										<span class="product__name">Nước hoa ô tô cao cấp Grasse</span>
+										<div class="product__price">
+											<span class="product__price-old">1.200.000đ</span>
+											<span class="product__price-current">900.000đ</span>
+										</div>
+										<div class="product__rate">
+											<i class="product__rate-like fa-solid fa-heart"></i>
+											<div class="product__rate-quantity">
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<span class="product__rate-number-quantity">88 đã bán</span>
+											</div>
+										</div>
+										<div class="product__origin">
+											<div class="product__origin-branch">Ohui</div>
+											<div class="product__origin-country">Nhật Bản</div>
+										</div>
+										<div class="product__sale-off">
+											<span class="product__sale-off-percent">43%</span>
+											<span class="product__sale-off-label">GIẢM</span>
+										</div>
+										<div class="product__like">
+											<i class="product__like-icon fa-solid fa-check"></i>
+											<span class="product__like-label">Yêu thích</span>
+										</div>
+									</div>
+									
+								</div>
+								<div class="col l-2-4 m-4 c-6 footer__position">
+									<div class="product-item">
+										<img src="./assets/img/nuochoa.jpg" alt="" class="product__img">
+										<span class="product__name">Nước hoa ô tô cao cấp Grasse</span>
+										<div class="product__price">
+											<span class="product__price-old">1.200.000đ</span>
+											<span class="product__price-current">900.000đ</span>
+										</div>
+										<div class="product__rate">
+											<i class="product__rate-like product__rate-like--liked fa-solid fa-heart"></i>
+											<div class="product__rate-quantity">
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star product__rate-star-golden fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<span class="product__rate-number-quantity">88 đã bán</span>
+											</div>
+										</div>
+										<div class="product__origin">
+											<div class="product__origin-branch">Ohui</div>
+											<div class="product__origin-country">Nhật Bản</div>
+										</div>
+										<div class="product__sale-off">
+											<span class="product__sale-off-percent">43%</span>
+											<span class="product__sale-off-label">GIẢM</span>
+										</div>
+										<div class="product__like">
+											<i class="product__like-icon fa-solid fa-check"></i>
+											<span class="product__like-label">Yêu thích</span>
+										</div>
+									</div>
+								</div>
+								<div class="col l-2-4 m-4 c-6 footer__position">
+									<div class="product-item">
+										<img src="https://shopgiayreplica.com/wp-content/uploads/2022/06/giay-new-balance-57-40-grey-day-6.jpg" alt="" class="product__img">
+										<span class="product__name">Nước hoa ô tô cao cấp Grasse</span>
+										<div class="product__price">
+											<span class="product__price-old">1.200.000đ</span>
+											<span class="product__price-current">900.000đ</span>
+										</div>
+										<div class="product__rate">
+											<i class="product__rate-like fa-solid fa-heart"></i>
+											<div class="product__rate-quantity">
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<i class="product__rate-star fa-solid fa-star"></i>
+												<span class="product__rate-number-quantity">88 đã bán</span>
+											</div>
+										</div>
+										<div class="product__origin">
+											<div class="product__origin-branch">Ohui</div>
+											<div class="product__origin-country">Nhật Bản</div>
+										</div>
+										<div class="product__sale-off">
+											<span class="product__sale-off-percent">43%</span>
+											<span class="product__sale-off-label">GIẢM</span>
+										</div>
+										<div class="product__like">
+											<i class="product__like-icon fa-solid fa-check"></i>
+											<span class="product__like-label">Yêu thích</span>
+										</div>
+									</div>
+									
+								</div>
+								<div class="pagination">
+									<ul class="pagination__list">
+										<li class="pagination__item"><a href=""><i class="pagination__item-icon fa-solid fa-chevron-left"></i></a></li>
+										<li class="pagination__item pagination__item--active"><a href="">1</a></li>
+										<li class="pagination__item"><a href="">2</a></li>
+										<li class="pagination__item"><a href="">3</a></li>
+										<li class="pagination__item"><a href="">4</a></li>
+										<li class="pagination__item"><a href="">...</a></li>
+										<li class="pagination__item"><a href="">14</a></li>
+										<li class="pagination__item"><a href=""><i class="pagination__item-icon fa-solid fa-chevron-right"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="grid wide">
+				<div class="row">
+						<div class="col l-2-4 m-4 c-6 footer__position">
+							<div class="footer__info">
+								<h4 class="footer__info-heading">
+									CHĂM SÓC KHÁCH HÀNG
+								</h4>
+								<ul class="footer__info-list">
+									<li class="footer__info-item"><a href="">Trung tâm trợ giúp</a></li>
+									<li class="footer__info-item"><a href="">Shop Mall</a></li>
+									<li class="footer__info-item"><a href="">Hướng dẫn mua hàng</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col l-2-4 m-4 c-6 footer__position">
+							<div class="footer__info">
+								<h4 class="footer__info-heading">
+									GIỚI THIỆU
+								</h4>
+								<ul class="footer__info-list">
+									<li class="footer__info-item"><a href="">Giới thiệu</a></li>
+									<li class="footer__info-item"><a href="">Tuyển dụng</a></li>
+									<li class="footer__info-item"><a href="">Điều khoản</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col l-2-4 m-4 c-6 footer__position">
+							<div class="footer__info">
+								<h4 class="footer__info-heading">
+									DANH MỤC
+								</h4>
+								<ul class="footer__info-list">
+									<li class="footer__info-item"><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+									<li class="footer__info-item"><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+									<li class="footer__info-item"><a href=""><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col l-2-4 m-4 c-6 footer__position">
+							<div class="footer__info">
+								<h4 class="footer__info-heading">
+									THEO DÕI CHÚNG TÔI
+								</h4>
+								<ul class="footer__info-list">
+									<li class="footer__info-item"><a href="">Trang điểm mặt</a></li>
+									<li class="footer__info-item"><a href="">Trang điểm môi</a></li>
+									<li class="footer__info-item"><a href="">Trang điểm mắt</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col l-2-4 m-4 c-12 footer__position">
+							<div class="footer__info">
+								<h4 class="footer__info-heading">
+									VÀO CỬA HÀNG TRÊN ỨNG DỤNG
+								</h4>
+								<ul class="footer__info-list-app">
+									<li class="footer__info-item footer__info-item-qr">
+										<img class="footer__info-item-qr-icon" src="./assets/img/qrcode.png" alt="">
+									</li>
+									<li class="footer__info-item footer__info-item-app">
+										<a href=""><img class="footer__info-item-app-gg" src="./assets/img/googleplay.png" alt=""></a>
+										<a href=""><img class="footer__info-item-app-at" src="./assets/img/appstore.png" alt=""></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				
+			</div>
+		</footer>
+		<footer class="footer__license">
+			<h3 class="footer__license-heading">© 2023 - Bản quyền thuộc về công ty ...</h3>
+		</footer>
+		
+	</div>
+	<div class="modal js-modalregister js-modallogin">
+		<div class="modal__overlay"></div>
+		<div class="form js-modal-containterlogin">
+			<header class="form__header">
+				<h4 class="form__header-heading-login">Đăng nhập</h4>
+				<h4 class="form__header-heading-register">Đăng ký</h4>
+			</header>
+			<div class="form__body">
+				<div class="form__body-input">
+					<input type="text" class="form__body-username" placeholder="Nhập username">
+					<input type="password" class="form__body-password" placeholder="Nhập password">
+				</div>
+				<div class="form__body-more">
+					<a href="" class="form__body-more-password">Quên mật khẩu</a>
+					<a href="" class="form__body-more-help">Cần trợ giúp?</a>
+				</div>
+				<div class="form__body-btn">
+					<button class="form__body-btn-back">TRỞ LẠI</button>
+					<button class="form__body-btn-login">ĐĂNG NHẬP</button>
+				</div>
+			</div>
+			<footer class="form__footer">
+				<div class="form__footer-apps">
+					<button class="form__footer-app form__footer-app-sms"><i class="form__footer-app-icon fa-solid fa-comment-sms"></i> SMS</button>
+					<button class="form__footer-app form__footer-app-facebook"><i class="fa-brands fa-facebook"></i> Facebook</button>
+					<button class="form__footer-app form__footer-app-google"><i class="fa-brands fa-google"></i> Google</button>
+				</div>
+			</footer>
+		</div>
+		<div class="form js-modal-containterregister">
+			<header class="form__header">
+				<h4 class="form__header-heading-login">Đăng ký</h4>
+				<h4 class="form__header-heading-register">Đăng nhập</h4>
+			</header>
+			<div class="form__body">
+				<div class="form__body-input">
+					<input type="text" class="form__body-username" placeholder="Nhập Email/Số điện thoại">
+					<input type="password" class="form__body-password" placeholder="Nhập Password">
+				</div>
+				<div class="form__body-more">
+					<p class="form__body-more-des">Bằng việc đăng ký, bạn đã đồng ý với Shopee về <a href="" class="color-red">Điều khoản dịch vụ</a> & <a href="" class="color-red">Chính sách bảo mật</a></p>
+				</div>
+				<div class="form__body-btn">
+					<button class="form__body-btn-back">TRỞ LẠI</button>
+					<button class="form__body-btn-login">Đăng ký</button>
+				</div>
+			</div>
+			<footer class="form__footer">
+				<div class="form__footer-apps">
+					<button class="form__footer-app form__footer-app-facebook"><i class="fa-brands fa-facebook"></i> Kết nối với Facebook</button>
+					<button class="form__footer-app form__footer-app-google"><i class="fa-brands fa-google"></i> Kết nối với Google</button>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script>
+		// Register btn
+		const btnRegister = document.querySelector('.js-modal-register');
+		const modalRegister = document.querySelector('.js-modalregister');
+		const modalContainerRegister = document.querySelector('.js-modal-containterregister');
+		function showRegisterForm(){
+			modalRegister.classList.add('open');
+			modalContainerRegister.classList.add('form-register');
+		}
+		function hideRegisterForm(){
+			modalRegister.classList.remove('open');
+			modalContainerRegister.classList.remove('form-register');
+
+		}
+		btnRegister.addEventListener('click',showRegisterForm);
+		modalRegister.addEventListener('click', hideRegisterForm);
+		modalContainerRegister.addEventListener('click', function (event) {
+                event.stopPropagation();
+        });
+
+        // Login btn
+        const btnLogin = document.querySelector('.js-modal-login');
+		const modalLogin = document.querySelector('.js-modallogin');
+		const modalContainerLogin = document.querySelector('.js-modal-containterlogin');
+		function showLoginForm(){
+			modalLogin.classList.add('open');
+			modalContainerLogin.classList.add('form-login');
+		}
+		function hideLoginForm(){
+			modalLogin.classList.remove('open');
+			modalContainerLogin.classList.remove('form-login');
+		}
+		btnLogin.addEventListener('click',showLoginForm);
+		modalLogin.addEventListener('click', hideLoginForm);
+		modalContainerLogin.addEventListener('click', function (event) {
+                event.stopPropagation();
+        });
+	</script>
+</body>
+
+</html>

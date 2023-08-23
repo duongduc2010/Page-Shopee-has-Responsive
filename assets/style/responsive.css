@@ -1,0 +1,131 @@
+/* Tablet and Mobile */
+@media (max-width: 1023px){
+    .header{
+        height: 80px;
+        margin-bottom: 55px;
+    }
+    .app__content{
+        padding-top: 10px;
+    }
+    .header__cart-icon{
+        font-size: 1.5rem;
+    }
+    .header__cart-product{
+        position: fixed;
+        top: 13%;
+        right: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 24px;
+        z-index: 1;
+    }
+    .header__cart-list{
+
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .header__cart-product::before{
+        display: none;
+    }
+    .header__navbar{
+        display: none;
+    }
+    .category{
+        display: none;
+    }
+    .home__filter{
+        display: none;
+    }
+    .header__sort{
+        display: block;
+    }
+    .mobile-category{
+        display: block;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .header__logo{
+        display: none;
+    }
+    .header__cart-icon{
+        font-size: 1.5rem;
+    }
+    .header__cart-product{
+        position: fixed;
+        top: 9%;
+        right: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 24px;
+    }
+    .header__cart-product::before{
+        display: none;
+    }
+    .pagination__item a{
+        font-size: 2.2rem;
+    }
+}
+/* Mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .header-with-search{
+        justify-content: space-around;
+        position: relative;
+    }
+    
+    .header__search{
+        z-index: 1;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        animation: mobileSearchSlide linear 0.2s;
+    }
+    .mobile__search{
+        display: flex;
+    }
+    .mobile__search-checkbox:checked ~ .header__search{
+        display: flex;
+    }
+    @keyframes mobileSearchSlide {
+        from{
+            top: 90%;
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+            top: 100%;
+        }
+    }
+    .mobile__menu{
+        display: flex;
+    }
+    .mobile__menu-checkbox:checked ~ .header__mobile-menu{
+        display: block;
+    }
+    
+    .header__logo {
+        width: 122px;
+    }
+    .header__cart{
+        width: 51px;
+    }
+    .header__cart-icon{
+        padding: 7px;
+    }
+    .footer__info{
+        text-align: center;
+    }
+    .footer__info-list-app{
+        margin-left: 100px;
+    }
+    .pagination__item a{
+        margin: 0 5px;
+        padding: 6px 12px;
+        font-size: 1.2rem;
+    }
+}
